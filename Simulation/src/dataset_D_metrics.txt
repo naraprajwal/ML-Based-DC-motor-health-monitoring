@@ -1,0 +1,21 @@
+DC MOTOR DATASET D - INITIAL SIMULATION RESULTS
+
+Runs: 1200
+Windows: 2400
+Binary accuracy: 0.8583
+Balanced accuracy: 0.8712
+Multi-label macro F1: 0.7694
+
+              precision    recall  f1-score   support
+
+           0     0.7580    0.9261    0.8337       230
+           1     0.9467    0.8162    0.8766       370
+
+    accuracy                         0.8583       600
+   macro avg     0.8524    0.8712    0.8551       600
+weighted avg     0.8744    0.8583    0.8602       600
+
+
+Confusion matrix:
+[[213  17]
+ [ 68 302]]

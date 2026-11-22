@@ -1,0 +1,36 @@
+=== DATASET SUMMARY ===
+Total simulation runs : 980
+Total windows         : 1960 (2s windows @ 500 Hz)
+Extracted features    : 40
+Train / Test windows  : 1470 / 490 (grouped by run_id)
+
+=== BINARY HEALTH CLASSIFICATION (Extra Trees) ===
+Accuracy          : 99.39%
+Balanced Accuracy : 99.08%
+Macro F1-Score    : 0.9881
+              precision    recall  f1-score   support
+
+     Healthy     0.9733    0.9865    0.9799        74
+      Faulty     0.9976    0.9952    0.9964       416
+
+    accuracy                         0.9939       490
+   macro avg     0.9855    0.9908    0.9881       490
+weighted avg     0.9939    0.9939    0.9939       490
+
+=== 7-CLASS FAULT IDENTIFICATION (Extra Trees) ===
+Accuracy          : 99.39%
+Balanced Accuracy : 99.30%
+Macro F1-Score    : 0.9933
+                        precision    recall  f1-score   support
+
+               Healthy     0.9733    0.9865    0.9799        74
+      Winding_Overload     0.9818    0.9643    0.9730        56
+        Loose_Windings     1.0000    1.0000    1.0000        76
+      Dirty_Commutator     1.0000    1.0000    1.0000        74
+         Bearing_Fault     1.0000    1.0000    1.0000        74
+Insulation_Degradation     1.0000    1.0000    1.0000        64
+   Excessive_Vibration     1.0000    1.0000    1.0000        72
+
+              accuracy                         0.9939       490
+             macro avg     0.9936    0.9930    0.9933       490
+          weighted avg     0.9939    0.9939    0.9939       490
