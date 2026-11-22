@@ -1,0 +1,64 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{yousefnejad2025}
+\citation{chougule2026}
+\citation{yousefnejad2025}
+\citation{yousefnejad2025}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Common DC Motor Faults}{3}{section.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Common brushed DC motor failure modes, physical causes, and primary observable signatures.}}{3}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:common_faults}{{1}{3}{Common brushed DC motor failure modes, physical causes, and primary observable signatures}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Ideal Separately Excited DC Motor Simulation}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Governing Physics Equations}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{1. Armature Electrical Dynamics}{4}{section*.3}\protected@file@percent }
+\newlabel{eq:elec}{{1}{4}{1. Armature Electrical Dynamics}{equation.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{2. Electromechanical Coupling}{4}{section*.4}\protected@file@percent }
+\newlabel{eq:coupling}{{3}{4}{2. Electromechanical Coupling}{equation.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{3. Rotor Mechanical Dynamics}{4}{section*.5}\protected@file@percent }
+\newlabel{eq:mech}{{4}{4}{3. Rotor Mechanical Dynamics}{equation.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{4. Lumped Thermal Dynamics}{4}{section*.6}\protected@file@percent }
+\newlabel{eq:thermal}{{5}{4}{4. Lumped Thermal Dynamics}{equation.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{5. Baseline Vibration and Realistic Supply Non-Idealities}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Nominal Parameters and Sampling Configuration}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Nominal 220\,V separately excited DC motor parameters and randomized operating ranges.}}{5}{table.caption.8}\protected@file@percent }
+\newlabel{tab:nominal_params}{{2}{5}{Nominal 220\,V separately excited DC motor parameters and randomized operating ranges}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Incorporation of Common Faults in the Simulation}{5}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Simulation Results and Feature Engineering}{6}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Simulated Time-Domain and Spectral Signatures}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Simulated armature current zoom (top), 0--240\,Hz vibration FFT spectrum (middle), and relative casing temperature rise (bottom) across Healthy operation and all six individual fault modes.}}{6}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:single_signals}{{1}{6}{Simulated armature current zoom (top), 0--240\,Hz vibration FFT spectrum (middle), and relative casing temperature rise (bottom) across Healthy operation and all six individual fault modes}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of Healthy operation against randomized 1-fault, 2-fault, and 3-fault simultaneous combinations in the multi-fault dataset.}}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:multi_signals}{{2}{7}{Comparison of Healthy operation against randomized 1-fault, 2-fault, and 3-fault simultaneous combinations in the multi-fault dataset}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Feature Extraction (40 Physics + Time + FFT Features)}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Machine Learning Models and Results}{7}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Model Selection and Validation Protocol}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Single-Fault 7-Class Classification Results (Dataset A)}{8}{subsection.5.2}\protected@file@percent }
+\newlabel{fig:cm_single}{{3a}{8}{7-class confusion matrix (Acc = 99.39\%)}{figure.caption.11}{}}
+\newlabel{sub@fig:cm_single}{{a}{8}{7-class confusion matrix (Acc = 99.39\%)}{figure.caption.11}{}}
+\newlabel{fig:feat_imp}{{3b}{8}{Top 15 Extra Trees feature importances}{figure.caption.11}{}}
+\newlabel{sub@fig:feat_imp}{{b}{8}{Top 15 Extra Trees feature importances}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Single-fault classification performance and physical feature importance ranking.}}{8}{figure.caption.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Randomized Multi-Fault Classification Results (Dataset B)}{8}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Per-fault multi-label identification performance on 600 held-out multi-fault test windows.}}{9}{table.caption.12}\protected@file@percent }
+\newlabel{tab:multilabel_results}{{3}{9}{Per-fault multi-label identification performance on 600 held-out multi-fault test windows}{table.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Exact-match accuracy breakdown by number of simultaneous faults in the test set.}}{9}{table.caption.13}\protected@file@percent }
+\newlabel{tab:exact_by_k}{{4}{9}{Exact-match accuracy breakdown by number of simultaneous faults in the test set}{table.caption.13}{}}
+\newlabel{fig:cm_multi_bin}{{4a}{9}{Binary health confusion matrix}{figure.caption.14}{}}
+\newlabel{sub@fig:cm_multi_bin}{{a}{9}{Binary health confusion matrix}{figure.caption.14}{}}
+\newlabel{fig:ml_bars}{{4b}{9}{Multi-label Precision, Recall, and F1 per fault}{figure.caption.14}{}}
+\newlabel{sub@fig:ml_bars}{{b}{9}{Multi-label Precision, Recall, and F1 per fault}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Multi-fault binary detection and per-fault multi-label identification results.}}{9}{figure.caption.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Physical Interpretation of Errors and Improvement Over Prior Baseline}{9}{section*.15}\protected@file@percent }
+\citation{chougule2026}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Laboratory Deployment, Safety, and Hardware Plan}{10}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Safe and Reversible Fault Induction in a College Lab}{10}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Operating Without Real Physical Fault Data (Two-Stage Hybrid Strategy)}{10}{subsection.6.2}\protected@file@percent }
+\bibcite{yousefnejad2025}{1}
+\bibcite{chougule2026}{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Proposed Bill of Materials (BOM) for the 220 V Lab Motor}{11}{subsection.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Proposed Bill of Materials (BOM) for the wireless 220\,V DC motor monitoring DAQ.}}{11}{table.caption.16}\protected@file@percent }
+\newlabel{tab:bom}{{5}{11}{Proposed Bill of Materials (BOM) for the wireless 220\,V DC motor monitoring DAQ}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Limitations and Next Steps}{11}{subsection.6.4}\protected@file@percent }
+\gdef \@abspage@last{12}
